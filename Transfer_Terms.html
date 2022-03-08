@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <style>
+         .fr{
+  border-bottom:1px solid #efece6; 
+  width:90%; 
+  padding:0in 7px 0in 7px; 
+  height:21px; 
+  border-top:1px solid #efece6;
+   border-right:1px solid #efece6;
+    border-left:1px solid #efece6; 
+    color:rgb(255, 250, 250); 
+    background-color: #bf7c00;
+    font-family: Tajawal; 
+    
+}   
+table{
+  border-radius: 10px; 
+  box-shadow: 0px 3px 10px 1px rgba(204, 204, 204, 1); 
+  border-collapse:collapse; 
+  border:none;
+  background-color: #fdfcfbf6;
+  width :100%;
+  font-family: Tajawal;
+  color:#4a1809;
+}
+
+.nr{
+ background-color: #fdfcfbf6; 
+}
+
+*{
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+    user-select: none;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.accordion{
+    height: 50px;
+    width: 80%;
+    margin-top: 20px;
+    background-color: #bf7c00;
+    color: #fff;
+    border-radius:10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 14px;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+
+}
+
+.title{
+    font-size: large;
+}
+.show{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+    color: #bf7c00;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+
+}
+.info{
+    height: 0;
+    width: 50%;
+    background-color: transparent;
+    color: #000;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    position: relative;
+    overflow: hidden;
+    border: 0;
+    transition: height .4s;
+}
+.info.reveal{
+    height: inherit;
+    width: 80%;
+    padding: 20px;
+    border: 1px solid #bf7c00;
+    border-radius: 0 0 10px 10px;
+    transition: height .4s;
+}
+
+.accordion.radius{
+border-radius:10px 10px  0 0 ;
+
+}
+.cs_cond{
+    box-shadow: 0 0 10px rgba(0 0 0 / 30%);
+    width: 100%;
+    padding: 65px;
+    height: 200px;
+}
+
+/* chart*/
+/**
+ * 1. The `reverse` animation direction plays the animation backwards
+ *    which makes it start at the stroke offset 100 which means displaying
+ *    no stroke at all and animating it to the value defined in the SVG
+ *    via the inline `stroke-dashoffset` attribute.
+ * 2. Rotate by -90 degree to make the starting point of the
+ *    stroke the top of the circle.
+ * 3. Using CSS transforms on SVG elements is not supported by Internet Explorer
+ *    and Edge, use the transform attribute directly on the SVG element as a
+ * .  workaround (https://markus.oberlehner.net/blog/pure-css-animated-svg-circle-chart/#part-4-internet-explorer-strikes-back).
+ */
+ .circle-chart__circle {
+  animation: circle-chart-fill 2s reverse; /* 1 */ 
+  transform: rotate(-90deg); /* 2, 3 */
+  transform-origin: center; /* 4 */
+}
+
+
+.circle-chart__info {
+  animation: circle-chart-appear 2s forwards;
+  opacity: 0;
+  transform: translateY(0.3em);
+}
+
+@keyframes circle-chart-fill {
+  to { stroke-dasharray: 0 100; }
+}
+
+@keyframes circle-chart-appear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="accordion">
+            <p class="title"> شروط التحويل الى الكلية</p>
+            <span class="show">+</span>
+        </div>
+        <div class="info">
+        <table  dir="rtl" >
+            <tbody>
+               
+                <tr>
+                    <td rowspan="2" style="border-bottom:1px solid #efece6; color:#bf7c00; width:66px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:1px solid #efece6; border-left:1px solid #efece6" valign="top">
+                    <p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <span lang="AR-SA" style="font-size:11.0pt">  <b> نوع التحويل </b></span></span></span></span></span></span></p>
+                    </td>
+                    <td colspan="2" style="border-bottom:1px solid #efece6; color:#bf7c00; width:114px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:none; border-left:1px solid #efece6" valign="top">
+                    <p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <b><span lang="AR-SA" style="font-size:11.0pt">   الشروط العامة</span></span></b></span></span></span></span></p>
+                    </td>
+                    <td colspan="2" style="border-bottom:1px solid #efece6; color:#bf7c00; width:114px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:none; border-left:1px solid #efece6" valign="top">
+                        <p dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <b><span lang="AR-SA" style="font-size:11.0pt">   شروط المعدلات التراكمية وعدد المقاعد طلاب</span></span></b></span></span></span></span></p>
+                        </td>
+                        <td colspan="2" style="border-bottom:1px solid #efece6; color:#bf7c00; width:114px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:none; border-left:1px solid #efece6" valign="top">
+                            <p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <b><span lang="AR-SA" style="font-size:11.0pt">   شروط المعدلات التراكمية وعدد المقاعد طالبات</span></span></b></span></span></span></span></p>
+                            </td>
+                </tr>
+                
+                <tr>
+                    <td style="border-bottom:1px solid #efece6; width:42px; padding:0in 7px 0in 7px; height:3px; border-top:none; border-right:none; border-left:1px solid #efece6" valign="top">
+                    <p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <b><span lang="AR-SA" style="font-size:11.0pt">   الكلية الاصلية</span></span></b></span></span></span></span></p>
+                    </td>
+                    <td style="border-bottom:1px solid #efece6; width:36px; padding:0in 7px 0in 7px; height:3px; border-top:none; border-right:none; border-left:1px solid #efece6" valign="top">
+                    <p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <b><span lang="AR-SA" style="font-size:11.0pt">   عدد الساعات المنجزة</span></span></b></span></span></span></span></p>
+                    </td>
+                    <td style="border-bottom:1px solid #efece6; width:42px; padding:0in 7px 0in 7px; height:3px; border-top:none; border-right:none; border-left:1px solid #efece6" valign="top">
+                     <p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <b><span lang="AR-SA" style="font-size:11.0pt">  المعدل التراكمي الأدنى</span></span></b></span></span></span></span></p>
+                    </td>
+                    <td style="border-bottom:1px solid #efece6; width:36px; padding:0in 7px 0in 7px; height:3px; border-top:none; border-right:none; border-left:1px solid #efece6" valign="top">
+                     <p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <b><span lang="AR-SA" style="font-size:11.0pt">  العدد الأقصى للمقاعد</span></span></b></span></span></span></span></p>
+                    </td>
+                    <td style="border-bottom:1px solid #efece6; width:42px; padding:0in 7px 0in 7px; height:3px; border-top:none; border-right:none; border-left:1px solid #efece6" valign="top">
+                     <p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <b><span lang="AR-SA" style="font-size:11.0pt">   المعدل التراكمي الأدنى</span></span></b></span></span></span></span></p>
+                    </td>
+                    <td style="border-bottom:1px solid #efece6; width:36px; padding:0in 7px 0in 7px; height:3px; border-top:none; border-right:none; border-left:1px solid #efece6" valign="top">
+                     <p dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <b><span lang="AR-SA" style="font-size:11.0pt">   العدد الأقصى للمقاعد</span></span></b></span></span></span></span></p>
+                    </td>
+                </tr>
+                <tr>
+                   
+                    <td  style="border-bottom:1px solid #efece6; color:#bf7c00; width:36px; padding:0in 7px 0in 7px; height:3px; border-top:none; border-right:none; border-left:1px solid #efece6" valign="top">
+                        <p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <span lang="AR-SA" style="font-size:11.0pt"><b> التحويل الى الكلية من خارج الكلية أو الجامعة
+
+                            (بدون اختصاص)</b></span></span></span></span></span></span></p>
+                        </td>
+                    </td>
+                    
+                    <td  style="border-bottom:1px solid #efece6; width:36px; padding:0in 7px 0in 7px; height:3px; border-top:none; border-right:none; border-left:1px solid #efece6" valign="top">
+                    <p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <span lang="AR-SA" style="font-size:11.0pt">   أن يكون من كلية علمية أو هندسية</span></span></span></span></span></span></p>
+                    </td>
+                    <td rowspan="2"style="border-bottom:1px solid #efece6; width:42px; padding:0in 7px 0in 7px; height:3px; border-top:none; border-right:none; border-left:1px solid #efece6" valign="top">
+                     <p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <span lang="AR-SA" style="font-size:11.0pt">   عدم انهاء أكثر من 40% من ساعات البرنامج الأصلي</span></span></span></span></span></span></p>
+                    </td>
+                    <td style="border-bottom:1px solid #efece6; width:36px; padding:0in 7px 0in 7px; height:3px; border-top:none; border-right:none; border-left:1px solid #efece6" valign="top">
+                     <p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <span lang="AR-SA" style="font-size:11.0pt">   4.00</span></span></span></span></span></span></p>
+                    </td>
+                    <td style="border-bottom:1px solid #efece6; width:42px; padding:0in 7px 0in 7px; height:3px; border-top:none; border-right:none; border-left:1px solid #efece6" valign="top">
+                     <p dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <span lang="AR-SA" style="font-size:11.0pt">   15</span></span></span></span></span></span></p>
+                    </td>
+                    <td style="border-bottom:1px solid #efece6; width:36px; padding:0in 7px 0in 7px; height:3px; border-top:none; border-right:none; border-left:1px solid #efece6" valign="top">
+                     <p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <span lang="AR-SA" style="font-size:11.0pt">   4.25</span></span></span></span></span></span></p>
+                    </td>
+                    <td style="border-bottom:1px solid #efece6; width:36px; padding:0in 7px 0in 7px; height:3px; border-top:none; border-right:none; border-left:1px solid #efece6" valign="top">
+                        <p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <span lang="AR-SA" style="font-size:11.0pt">  15</span></span></span></span></span></span></p>
+                       </td>
+                </tr>
+                <tr>
+                    <td  style="border-bottom:1px solid #efece6; color:#bf7c00; width:36px; padding:0in 7px 0in 7px; height:3px; border-top:none; border-right:none; border-left:1px solid #efece6" valign="top">
+                        <p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <span lang="AR-SA" style="font-size:11.0pt"><b> من كليات الجامعة أو كليات من جامعات خارجية الى الكلية
+
+                            (اختصاص علوم الحاسب)</b></span></span></span></span></span></span></p>
+                        </td>
+                    </td>
+                    <td style="border-bottom:1px solid #efece6; width:42px; padding:0in 7px 0in 7px; height:3px; border-top:none; border-right:none; border-left:1px solid #efece6" valign="top">
+                     <p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <span lang="AR-SA" style="font-size:11.0pt">   أن يكون من قسم تخصص حاسوبي</span></span></span></span></span></span></p>
+                    </td>
+                    <td style="border-bottom:1px solid #efece6; width:36px; padding:0in 7px 0in 7px; height:3px; border-top:none; border-right:none; border-left:1px solid #efece6" valign="top">
+                     <p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <span lang="AR-SA" style="font-size:11.0pt">   4.00</span></span></span></span></span></span></p>
+                    </td>
+                    <td style="border-bottom:1px solid #efece6; width:42px; padding:0in 7px 0in 7px; height:3px; border-top:none; border-right:none; border-left:1px solid #efece6" valign="top">
+                     <p dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <span lang="AR-SA" style="font-size:11.0pt">   15</span></span></span></span></span></span></p>
+                    </td>
+                    <td style="border-bottom:1px solid #efece6; width:36px; padding:0in 7px 0in 7px; height:3px; border-top:none; border-right:none; border-left:1px solid #efece6" valign="top">
+                     <p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <span lang="AR-SA" style="font-size:11.0pt">   4.25</span></span></span></span></span></span></p>
+                    </td>
+                    <td style="border-bottom:1px solid #efece6; width:36px; padding:0in 7px 0in 7px; height:3px; border-top:none; border-right:none; border-left:1px solid #efece6" valign="top">
+                        <p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <span lang="AR-SA" style="font-size:11.0pt">  15</span></span></span></span></span></span></p>
+                       </td>
+                </tr>
+            </tbody>
+        </table>
+               </div> 
+               <div class="accordion">
+                <p class="title"> شروط التحويل إلى قسم علوم الحاسب</p>
+                <span class="show">+</span>
+            </div>
+            <div class="info">
+                <div class="cs_cond">
+                <h style="color:#4a1809"><b>شروط التحويل إلى قسم علوم الحاسب </b></h>
+                <ol style="color:#4a1809">
+                    <li>أن لايكون الطالب قد انهي أكثر من 50% من ساعات البرنامج بدون السنة التحضيرية .</li>
+                    <li>أن لايقل معدله التراكمي عن التحويل عن 3.5 .</li>
+                </ol>
+            </div>
+            </div>
+           <div style="width: 80%; margin:2%;">
+                <h3 style="color:#4a1809 ;margin-right: 43%;"> <b> شروط تخصيص الطلبة </b></h3>
+            <table  dir="rtl" >
+                <tbody>
+                   <thead>
+                    <td  colspan="7" style="border-bottom:1px solid #efece6; color:#bf7c00; width:66px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:1px solid #efece6; border-left:1px solid #efece6" valign="top">
+                        <p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <span lang="AR-SA" style="font-size:11.0pt">  <b> شطر الطلاب  </b></span></span></span></span></span></span></p>
+                        </td>
+                   </thead>
+                    <tr>
+                        <td  style="border-bottom:1px solid #efece6; color:#bf7c00; width:66px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:1px solid #efece6; border-left:1px solid #efece6" valign="top">
+                        <p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <span lang="AR-SA" style="font-size:11.0pt">  <b> متوسط المعدلات </b></span></span></span></span></span></span></p>
+                        </td>
+                        
+                        <td rowspan="2"style="border-bottom:1px solid #efece6; color:#bf7c00; width:66px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:1px solid #efece6; border-left:1px solid #efece6" valign="top">
+                            <section>
+                                <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                                  <circle class="circle-chart__background"  stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                  <circle class="circle-chart__circle" stroke="#bf7c00" stroke-width="2" stroke-dasharray="84.2,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                  <g class="circle-chart__info">
+                                    <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="6">84.2%</text>
+                                    <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="3">نسبة تحقق الرغبة الاولى</text>
+                                  </g>
+                                </svg>
+                              </section>
+                            </td>
+                        <td rowspan="2"style="border-bottom:1px solid #efece6; color:#bf7c00; width:66px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:1px solid #efece6; border-left:1px solid #efece6" valign="top">
+                            <section>
+                                <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                                  <circle class="circle-chart__background"  stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                  <circle class="circle-chart__circle" stroke="#bf7c00" stroke-width="2" stroke-dasharray="15.8,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                  <g class="circle-chart__info">
+                                    <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="6">15.8%</text>
+                                    <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="3">نسبة تحقق الرغبة الثانية</text>
+                                  </g>
+                                </svg>
+                              </section>
+                            </td>
+                            <td rowspan="2"style="border-bottom:1px solid #efece6; color:#bf7c00; width:66px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:1px solid #efece6; border-left:1px solid #efece6" valign="top">
+                                <section>
+                                    <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                                      <circle class="circle-chart__background"  stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                      <circle class="circle-chart__circle" stroke="#bf7c00" stroke-width="2" stroke-dasharray="0,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                      <g class="circle-chart__info">
+                                        <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="6">0%</text>
+                                        <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="3">نسبة تحقق الرغبة الثالث</text>
+                                      </g>
+                                    </svg>
+                                  </section>
+                                </td>
+                                <td rowspan="2"style="border-bottom:1px solid #efece6; color:#bf7c00; width:66px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:1px solid #efece6; border-left:1px solid #efece6" valign="top">
+                                    <section>
+                                        <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                                          <circle class="circle-chart__background"  stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                          <circle class="circle-chart__circle" stroke="#bf7c00" stroke-width="2" stroke-dasharray="37.6,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                          <g class="circle-chart__info">
+                                            <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="6">37.6%</text>
+                                            <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="3">النسبة المئوية</text>
+                                          </g>
+                                        </svg>
+                                      </section>
+                                    </td>
+                        <td style="border-bottom:1px solid #efece6; color:#bf7c00; width:114px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:none; border-left:1px solid #efece6" valign="top">
+                         <p dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <b><span lang="AR-SA" style="font-size:11.0pt">  عدد الطلاب </span></span></b></span></span></span></span></p>
+                         </td>
+                        <td style="border-bottom:1px solid #efece6; color:#bf7c00; width:114px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:none; border-left:1px solid #efece6" valign="top">
+                          <p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <b><span lang="AR-SA" style="font-size:11.0pt">   القسم </span></span></b></span></span></span></span></p>
+                        </td>
+                </tr>
+                <tr>
+					<td  style="border-bottom:1px solid #efece6; color:#4a1809; width:66px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:1px solid #efece6; border-left:1px solid #efece6" valign="top">
+					<p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <span lang="AR-SA" style="font-size:11.0pt">  <b> 4.12 </b></span></span></span></span></span></span></p>
+					</td>
+					<td  style="border-bottom:1px solid #efece6; color:#4a1809; width:114px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:none; border-left:1px solid #efece6" valign="top">
+					<p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <b><span lang="AR-SA" style="font-size:11.0pt">   38</span></span></b></span></span></span></span></p>
+					</td>
+					<td  style="border-bottom:1px solid #efece6; color:#4a1809; width:114px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:none; border-left:1px solid #efece6" valign="top">
+					 <p dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <b><span lang="AR-SA" style="font-size:11.0pt">  علوم حاسب</span></span></b></span></span></span></span></p>
+					</td>
+					
+			</tr>
+            </tbody>
+        </table>
+               </div>
+               <div style="width: 80%; margin:2%;">
+            <table  dir="rtl" >
+                <tbody>
+                   <thead>
+                    <td  colspan="7" style="border-bottom:1px solid #efece6; color:#bf7c00; width:66px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:1px solid #efece6; border-left:1px solid #efece6" valign="top">
+                        <p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <span lang="AR-SA" style="font-size:11.0pt">  <b> شطر الطالبات  </b></span></span></span></span></span></span></p>
+                        </td>
+                   </thead>
+                    <tr>
+                        <td  style="border-bottom:1px solid #efece6; color:#bf7c00; width:66px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:1px solid #efece6; border-left:1px solid #efece6" valign="top">
+                        <p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <span lang="AR-SA" style="font-size:11.0pt">  <b> متوسط المعدلات </b></span></span></span></span></span></span></p>
+                        </td>
+                        
+                        <td rowspan="2"style="border-bottom:1px solid #efece6; color:#bf7c00; width:66px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:1px solid #efece6; border-left:1px solid #efece6" valign="top">
+                            <section>
+                                <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                                  <circle class="circle-chart__background"  stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                  <circle class="circle-chart__circle" stroke="#bf7c00" stroke-width="2" stroke-dasharray="61.7,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                  <g class="circle-chart__info">
+                                    <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="6">61.7%</text>
+                                    <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="3">نسبة تحقق الرغبة الاولى</text>
+                                  </g>
+                                </svg>
+                              </section>
+                            </td>
+                        <td rowspan="2"style="border-bottom:1px solid #efece6; color:#bf7c00; width:66px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:1px solid #efece6; border-left:1px solid #efece6" valign="top">
+                            <section>
+                                <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                                  <circle class="circle-chart__background"  stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                  <circle class="circle-chart__circle" stroke="#bf7c00" stroke-width="2" stroke-dasharray="38.3,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                  <g class="circle-chart__info">
+                                    <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="6">38.3%</text>
+                                    <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="3">نسبة تحقق الرغبة الثانية</text>
+                                  </g>
+                                </svg>
+                              </section>
+                            </td>
+                            <td rowspan="2"style="border-bottom:1px solid #efece6; color:#bf7c00; width:66px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:1px solid #efece6; border-left:1px solid #efece6" valign="top">
+                                <section>
+                                    <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                                      <circle class="circle-chart__background"  stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                      <circle class="circle-chart__circle" stroke="#bf7c00" stroke-width="2" stroke-dasharray="0,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                      <g class="circle-chart__info">
+                                        <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="6">0%</text>
+                                        <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="3">نسبة تحقق الرغبة الثالثة</text>
+                                      </g>
+                                    </svg>
+                                  </section>
+                                </td>
+                                <td rowspan="2"style="border-bottom:1px solid #efece6; color:#bf7c00; width:66px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:1px solid #efece6; border-left:1px solid #efece6" valign="top">
+                                    <section>
+                                        <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                                          <circle class="circle-chart__background"  stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                          <circle class="circle-chart__circle" stroke="#bf7c00" stroke-width="2" stroke-dasharray="38,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                          <g class="circle-chart__info">
+                                            <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="6">38%</text>
+                                            <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="3">النسبة المئوية</text>
+                                          </g>
+                                        </svg>
+                                      </section>
+                                    </td>
+                        <td style="border-bottom:1px solid #efece6; color:#bf7c00; width:114px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:none; border-left:1px solid #efece6" valign="top">
+                         <p dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <b><span lang="AR-SA" style="font-size:11.0pt">  عدد الطالبات </span></span></b></span></span></span></span></p>
+                         </td>
+                        <td style="border-bottom:1px solid #efece6; color:#bf7c00; width:114px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:none; border-left:1px solid #efece6" valign="top">
+                          <p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <b><span lang="AR-SA" style="font-size:11.0pt">   القسم </span></span></b></span></span></span></span></p>
+                        </td>
+                </tr>
+                <tr>
+					<td  style="border-bottom:1px solid #efece6; color:#4a1809; width:66px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:1px solid #efece6; border-left:1px solid #efece6" valign="top">
+					<p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <span lang="AR-SA" style="font-size:11.0pt">  <b> 4.44 </b></span></span></span></span></span></span></p>
+					</td>
+					<td  style="border-bottom:1px solid #efece6; color:#4a1809; width:114px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:none; border-left:1px solid #efece6" valign="top">
+					<p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <b><span lang="AR-SA" style="font-size:11.0pt">   47</span></span></b></span></span></span></span></p>
+					</td>
+					<td  style="border-bottom:1px solid #efece6; color:#4a1809; width:114px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:none; border-left:1px solid #efece6" valign="top">
+					 <p dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <b><span lang="AR-SA" style="font-size:11.0pt">  علوم حاسب</span></span></b></span></span></span></span></p>
+					</td>
+					
+			</tr>
+            </tbody>
+        </table>
+               </div>
+               <div style="width: 80%; margin:2%;">
+                <table  dir="rtl" >
+                    <tbody>
+                       <thead>
+                        <td  colspan="2" style="border-bottom:1px solid #efece6; color:#bf7c00; width:66px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:1px solid #efece6; border-left:1px solid #efece6" valign="top">
+                            <p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <span lang="AR-SA" style="font-size:11.0pt">  <b> عدد المقاعد  </b></span></span></span></span></span></span></p>
+                            </td>
+                       </thead>
+                        <tr>
+                            <td  style="border-bottom:1px solid #efece6; color:#bf7c00; width:66px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:1px solid #efece6; border-left:1px solid #efece6" valign="top">
+                            <p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <span lang="AR-SA" style="font-size:11.0pt">  <b> الطلاب </b></span></span></span></span></span></span></p>
+                            </td>
+                            <td  style="border-bottom:1px solid #efece6; color:#bf7c00; width:66px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:1px solid #efece6; border-left:1px solid #efece6" valign="top">
+                                <p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <span lang="AR-SA" style="font-size:11.0pt">  <b> الطالبات </b></span></span></span></span></span></span></p>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td  style="border-bottom:1px solid #efece6; color:#4a1809; width:66px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:1px solid #efece6; border-left:1px solid #efece6" valign="top">
+                            <p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <span lang="AR-SA" style="font-size:11.0pt">  <b>10 </b></span></span></span></span></span></span></p>
+                            </td>
+                            <td  style="border-bottom:1px solid #efece6; color:#4a1809; width:66px; padding:0in 7px 0in 7px; height:21px; border-top:none; border-right:1px solid #efece6; border-left:1px solid #efece6" valign="top">
+                                <p  dir="RTL" style="text-align:center"><span style="font-size:12pt"><span style="direction:rtl"><span style="unicode-bidi:embed"> <span lang="AR-SA" style="font-size:11.0pt">  <b> 10 </b></span></span></span></span></span></span></p>
+                                </td>
+                        </tr>
+                        </tbody>
+                        </table>
+                        </div>
+                
+    </body>
+            <script>
+            var shows = document.querySelectorAll(".show");
+var infos = document.querySelectorAll(".info");
+var accordions = document.querySelectorAll(".accordion");
+
+for (let i = 0; i < shows.length; i++) {
+  shows[i].onclick = function() {
+    for (let j = 0; j < shows.length; j++) {
+      if (shows[j] != this) {
+        infos[j].classList.remove("reveal");
+        shows[j].innerHTML = "+";
+        accordions[j].classList.remove("radius");
+      }
+    }
+    accordions[i].classList.toggle("radius");
+    infos[i].classList.toggle("reveal");
+    if (infos[i].className.includes("reveal")) shows[i].innerHTML = "-";
+    else shows[i].innerHTML = "+";
+  };
+}
+</script>
+    </body>
+</html>
