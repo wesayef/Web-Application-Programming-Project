@@ -1,0 +1,709 @@
+<html>
+    <header>
+        <style>
+ @import url("https://fonts.googleapis.com/css?family=Tajawal:400,500,700,800&display=swap&subset=arabic");
+
+body {
+  font-family: "Tajawal", sans-serif;
+
+}
+html {
+    direction:rtl;
+}
+.cards{
+display: flex;
+color:#4a1809;
+justify-content: space-evenly;
+margin: 2%;
+width: 65%;
+margin-right: 20%;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  box-shadow: 0 0 10px rgba(0 0 0 / 30%);
+}
+.card-logo{
+  border-bottom:1px dashed #bf7c00;
+}
+.user-logo-img{
+margin-right: 25%;
+}
+.tablink{
+width: 50%;
+background-color: #4a1809 ;
+height:40px;
+color:white;
+border: none;
+outline: none;
+cursor: pointer;
+font-size: 17px;
+margin-left: 1%;
+}
+.tablink:hover {
+  background-color:bf7c00;
+}
+.tabcontent {
+  color: white;
+  display: none;
+  height: 100%;
+}
+.buttons{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin: 0 20% 0 5%  ;
+width: 65%;}
+a{
+color:#4a1809;
+background-color: transparent;
+}
+a:hover, a:active {
+color: #bf7c00;
+}
+h4{
+    text-align: center;
+}
+
+
+        </style>
+    </header>
+    <body>
+        <div class="buttons">
+        <button class="tablink" onclick="openPage('men-section', this)"id="defaultOpen">شطر الطلاب </button>
+        <button class="tablink" onclick="openPage('woman-section', this)" >شطر الطالبات </button>
+        </div>
+<div id="men-section" class="tabcontent">
+<!--ROW-->
+    <div class="cards">
+        <div class="card">
+             <div class="card-logo">
+             <img class="user-logo-img" src="user.png" width="50%">
+             <h3 style="text-align: center;">مشعل غالب الحربي</h3>
+             </div>
+             <div class="club-name">
+                <p> <h4>​أستاذ مساعد </h4>
+                    <b> تحويلة الهاتف : </b>8397<br>
+                    <b>الايميل: </b>mg.alharbi@psau.edu.sa<br>
+                    <a href=https://faculty.psau.edu.sa/ar/psau/facultymember/mg.alharbi ><b>الموقع الجامعي</b></a>
+                </p>
+             </div>
+        </div>
+        <div class="card">
+             <div class="card-logo">
+             <img class="user-logo-img" src="user.png" width="50%">
+             <h3 style="text-align: center;">شتوي عبدالله فارس السبيعي </h3>
+             </div>
+             <div class="club-name">
+                <p > <h4>​أستاذ مساعد </h4>
+                    <b> تحويلة الهاتف : </b>8339<br>
+                    <b>الايميل:</b>almaslukh@gmail.com<br>
+                    <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/sa.alsubai"><b>الموقع الجامعي</b></a>
+                </p>
+             </div>
+        </div>  
+        <div class="card">
+             <div class="card-logo">
+             <img class="user-logo-img" src="user.png" width="50%">
+             <h3 style="text-align: center;">عبدالاله بن عبدالعزيز الوابل </h3>
+             </div>
+             <div class="club-name">
+                <p > <h4>​أستاذ مساعد </h4>
+                    <b> تحويلة الهاتف : </b>8381<br>
+                    <b>الايميل:</b>a.alwabel@psau.edu.sa<br>
+                    <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/a.alwabel"><b>الموقع الجامعي</b></a>
+                </p>
+             </div>
+        </div>
+    </div>
+<!--ROW-->
+    <div class="cards">
+        <div class="card">
+             <div class="card-logo">
+             <img class="user-logo-img" src="user.png" width="50%">
+             <h3 style="text-align: center;">أحمد بن عمر عسيري </h3>
+             </div>
+             <div class="club-name">
+                <p> <h4>​أستاذ مساعد </h4>
+                   <b> تحويلة الهاتف : </b>8386<br>
+                   <b>الايميل:</b>a.aseeri@psau.edu.sa<br>
+                   <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/a.aseeri"><b>الموقع الجامعي</b></a>
+                </p>
+             </div>
+        </div>
+        <div class="card">
+             <div class="card-logo">
+             <img class="user-logo-img" src="user.png" width="50%">
+             <h3 style="text-align: center;">بندر بن صالح محمد المصلوخ</h3>
+             </div>
+             <div class="club-name">
+                <p> <h4>​أستاذ مساعد </h4>
+                    <b> تحويلة الهاتف : </b>8396<br>
+                    <b>الايميل:</b>almaslukh@gmail.com <br>
+                    <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/b.almaslukh "><b>الموقع الجامعي</b></a>
+                </p>
+             </div>
+        </div>  
+        <div class="card">
+                        <div class="card-logo">
+                        <img class="user-logo-img" src="user.png" width="50%">
+                        <h3 style="text-align: center;">عدي محمد سليمان الحضيف </h3>
+                        </div>
+                        <div class="club-name">
+                            <p > <h4>​أستاذ مساعد </h4>
+                           <b> تحويلة الهاتف : </b>8359<br>
+                            <b>الايميل:</b>a.alhudhaif@psau.edu.sa<br>
+                           <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/a.alhudhaif"><b>الموقع الجامعي</b></a>
+                        </div>
+                        </div>
+                        </div>
+
+ <!--ROW-->
+ <div class="cards">
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="user.png" width="50%">
+         <h3 style="text-align: center;">خالد محمد الصادق بسيس	</h3>
+         </div>
+         <div class="club-name">
+            <p> <h4>​أستاذ  </h4>
+                <b> تحويلة الهاتف : </b>8385<br>
+                <b>الايميل: </b>k.bsaies@psau.edu.sa<br>
+                <a href=https://faculty.psau.edu.sa/ar/psau/facultymember/k.bsaies ><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="user.png" width="50%">
+         <h3 style="text-align: center;">محمد عثمان علي حجازي</h3>
+         </div>
+         <div class="club-name">
+            <p > <h4>​أستاذ  </h4>
+                <b> تحويلة الهاتف : </b>8379<br>
+                <b>الايميل:</b>m.hegazi@psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/m.hegazi"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>  
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="user.png" width="50%">
+         <h3 style="text-align: center;">أحمد علي حسن غنيمات</h3>
+         </div>
+         <div class="club-name">
+            <p > <h4>​أستاذ مساعد </h4>
+                <b> تحويلة الهاتف : </b>8383<br>
+                <b>الايميل:</b>a.ghneimat@psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/a.ghneimat"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>
+</div>
+ <!--ROW-->
+ <div class="cards">
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="user.png" width="50%">
+         <h3 style="text-align: center;">الصادق أحمد محمد بابكر</h3>
+         </div>
+         <div class="club-name">
+            <p> <h4>أستاذ مساعد  </h4>
+                <b> تحويلة الهاتف : </b>8374<br>
+                <b>الايميل: </b>e.babiker@psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/e.babiker"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="user.png" width="50%">
+         <h3 style="text-align: center;">مهدي عبد المجيد محمد خماخم</h3>
+         </div>
+         <div class="club-name">
+            <p > <h4>أستاذ مساعد  </h4>
+                <b> تحويلة الهاتف : </b>8380<br>
+                <b>الايميل:</b>m.khemakhem@psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/m.khemakhem"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>  
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="user.png" width="50%">
+         <h3 style="text-align: center;">بلحسن عبدالمجيد العكروت</h3>
+         </div>
+         <div class="club-name">
+            <p > <h4>​أستاذ مساعد </h4>
+                <b> تحويلة الهاتف : </b>8370<br>
+                <b>الايميل:</b>b.akrou@psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/b.akrout"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>
+</div>
+ <!--ROW-->
+ <div class="cards">
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="user.png" width="50%">
+         <h3 style="text-align: center;">خليل محمد شبيل</h3>
+         </div>
+         <div class="club-name">
+            <p> <h4>أستاذ مساعد  </h4>
+                <b> تحويلة الهاتف : </b>8356<br>
+                <b>الايميل: </b>k.chebil@psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/k.chebil"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="user.png" width="50%">
+         <h3 style="text-align: center;">أحمد محمد عبد الرحمن</h3>
+         </div>
+         <div class="club-name">
+            <p > <h4>أستاذ مساعد  </h4>
+                <b> تحويلة الهاتف : </b>8326<br>
+                <b>الايميل:</b>a.abdalrahman@psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/a.abdalrahman"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>  
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="user.png" width="50%">
+         <h3 style="text-align: center;">سلمان عبدالله علي السلمان</h3>
+         </div>
+         <div class="club-name">
+            <p > <h4>محاضر</h4>
+                <b> تحويلة الهاتف : </b>ـــ<br>
+                <b>الايميل:</b>salman.a.alsalman@gmail.com<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/s.alsalman"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>
+</div>
+<!--ROW-->
+<div class="cards">
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="user.png" width="50%">
+         <h3 style="text-align: center;">سلطان أحمد علي شير</h3>
+         </div>
+         <div class="club-name">
+            <p> <h4>محاضر</h4>
+                <b> تحويلة الهاتف : </b>8375<br>
+                <b>الايميل: </b>s.alisher@psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/s.alisher"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="user.png" width="50%">
+         <h3 style="text-align: center;">وليد نزيه عبدالقوي أحمد</h3>
+         </div>
+         <div class="club-name">
+            <p > <h4>محاضر</h4>
+                <b> تحويلة الهاتف : </b>8376<br>
+                <b>الايميل:</b>w.nazeeh@psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/w.nazeeh"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>  
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="user.png" width="50%">
+         <h3 style="text-align: center;">سلطان قاسم الحازمي</h3>
+         </div>
+         <div class="club-name">
+            <p > <h4>معيد</h4>
+                <b> تحويلة الهاتف : </b>8398<br>
+                <b>الايميل:</b>s.alhazmi@psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/s.alhazmi"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>
+</div>
+<!--ROW-->
+<div class="cards">
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="user.png" width="50%">
+         <h3 style="text-align: center;">بدر سليمان محمد الصبيحي</h3>
+         </div>
+         <div class="club-name">
+            <p> <h4>محاضر مبتعث	 </h4>
+                <b> تحويلة الهاتف : </b>ـــ<br>
+                <b>الايميل: </b>balsubaihi@ksu.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/b.alsubaihi"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="user.png" width="50%">
+         <h3 style="text-align: center;">عبدالعزيز محمد الحميضي</h3>
+         </div>
+         <div class="club-name">
+            <p > <h4>محاضر مبتعث</h4>
+                <b> تحويلة الهاتف : </b>ـــ<br>
+                <b>الايميل:</b>km.5432@hotmail.com<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/a.alhomaidhi"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>  
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="user.png" width="50%">
+         <h3 style="text-align: center;">بدر مطر فرج العتيبي</h3>
+         </div>
+         <div class="club-name">
+            <p > <h4>محاضر مبتعث</h4>
+                <b> تحويلة الهاتف : </b>ـــ<br>
+                <b>الايميل:</b>bm.alotaibi@psau.edu.sa	<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/bm.alotaibi"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>
+</div>		 			
+<!--ROW-->
+<div class="cards">
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="user.png" width="50%">
+         <h3 style="text-align: center;">عبدالرحمن عبدالله العرج</h3>
+         </div>
+         <div class="club-name">
+            <p> <h4>معيد مبتعث</h4>
+                <b> تحويلة الهاتف : </b>ـــ<br>
+                <b>الايميل: </b>a.alaraj@psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/a.alaraj"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="user.png" width="50%">
+         <h3 style="text-align: center;">سعود ناصر العييد</h3>
+         </div>
+         <div class="club-name">
+            <p > <h4>معيد مبتعث</h4>
+                <b> تحويلة الهاتف : </b>ـــ<br>
+                <b>الايميل:</b>s.aleyead@psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/s.aleyead"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>  
+    </div>	
+</div>                       
+</div>
+
+<div id="woman-section" class="tabcontent">
+<!--ROW-->
+<div class="cards">
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="F-user.png" width="50%">
+         <h3 style="text-align: center;">د.هيا محمد عبدالعزيز العسكر</h3>
+         </div>
+         <div class="club-name">
+            <p> <h4>أستاذ مشارك</h4>
+                <b> تحويلة الهاتف : </b>8810<br>
+                <b>الايميل: </b>h.alaskar@psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/h.alaskar"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="F-user.png" width="50%">
+         <h3 style="text-align: center;">د.اروى محمد سعد الرويس</h3>
+         </div>
+         <div class="club-name">
+            <p > <h4>أستاذ مساعد  </h4>
+                <b> تحويلة الهاتف : </b>8845<br>
+                <b>الايميل:</b>a.alrawis@psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/a.alrawais"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>  
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="F-user.png" width="50%">
+         <h3 style="text-align: center;">د. شبانا رحمان علي محمد</h3>
+         </div>
+         <div class="club-name">
+            <p > <h4>​أستاذ مساعد </h4>
+                <b> تحويلة الهاتف : </b>8840<br>
+                <b>الايميل:</b>s.mohammed@psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/s.mohammed"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>
+</div>
+<!--ROW-->
+<div class="cards">
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="F-user.png"width="50%">
+         <h3 style="text-align: center;">د.فاطمة ريان العوض<br> حاج علي احمد</h3>
+         </div>
+         <div class="club-name">
+            <p> <h4>أستاذ مساعد</h4>
+                <b> تحويلة الهاتف : </b>8833<br>
+                <b>الايميل: </b>fe.ahmed@psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/fe.ahmed"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="F-user.png" width="50%">
+         <h3 style="text-align: center;">د.عائشة آدم محمد عبدالله</h3>
+         </div>
+         <div class="club-name">
+            <p > <h4>أستاذ مساعد  </h4>
+                <b> تحويلة الهاتف : </b>8813<br>
+                <b>الايميل:</b>a.abdulahi@psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/a.abdulahi"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>  
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="F-user.png" width="50%">
+         <h3 style="text-align: center;">د.ثفافيل فيابوري</h3>
+         </div>
+         <div class="club-name">
+            <p > <h4>​أستاذ مساعد </h4>
+                <b> تحويلة الهاتف : </b>8859<br>
+                <b>الايميل:</b>t.thangam@ psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/t.thangam"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>
+</div> 	
+<!--ROW-->
+<div class="cards">
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="F-user.png" width="50%">
+         <h3 style="text-align: center;">د.الزهره محمد علي سباعي</h3>
+         </div>
+         <div class="club-name">
+            <p> <h4>أستاذ مساعد</h4>
+                <b> تحويلة الهاتف : </b>8860<br>
+                <b>الايميل: </b>z.sbai@psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/z.sbai"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="F-user.png" width="50%">
+         <h3 style="text-align: center;">د.مريم جلال علي العيادي</h3>
+         </div>
+         <div class="club-name">
+            <p > <h4>أستاذ مساعد  </h4>
+                <b> تحويلة الهاتف : </b>8847<br>
+                <b>الايميل:</b>m.ayedi@psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/m.ayedi"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>  
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="F-user.png" width="50%">
+         <h3 style="text-align: center;">د. اسراء الدسوقي</h3>
+         </div>
+         <div class="club-name">
+            <p > <h4>​أستاذ مساعد </h4>
+                <b> تحويلة الهاتف : </b>8842<br>
+                <b>الايميل:</b>em.eldesouky@psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/em.eldesouky"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>
+</div>
+<!--ROW-->
+<div class="cards">
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="F-user.png" width="50%">
+         <h3 style="text-align: center;">مها محمد عبدالله المجلي</h3>
+         </div>
+         <div class="club-name">
+            <p> <h4>محاضر</h4>
+                <b> تحويلة الهاتف : </b>8855<br>
+                <b>الايميل: </b>m.almujaly@psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/m.almujaly"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="F-user.png"width="50%">
+         <h3 style="text-align: center;">شبانا زياد بوتو فيدو</h3>
+         </div>
+         <div class="club-name">
+            <p > <h4>محاضر</h4>
+                <b> تحويلة الهاتف : </b>8842<br>
+                <b>الايميل:</b>s.ziyad@psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/s.ziyad"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>  
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="F-user.png"width="50%">
+         <h3 style="text-align: center;">جابين نزير حسين محبوب</h3>
+         </div>
+         <div class="club-name">
+            <p > <h4>محاضر</h4>
+                <b> تحويلة الهاتف : </b>8842<br>
+                <b>الايميل:</b>j.hussain@psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/j.hussain"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>
+</div>
+<!--ROW-->
+<div class="cards">
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="F-user.png" width="50%">
+         <h3 style="text-align: center;">سعاد فاضل عيسى  العنزي</h3>
+         </div>
+         <div class="club-name">
+            <p> <h4>محاضر</h4>
+                <b> تحويلة الهاتف : </b>8846<br>
+                <b>الايميل: </b>sf.alonazi@psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/sf.alonazi"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="F-user.png" width="50%">
+         <h3 style="text-align: center;">نورة على عبدالرحمن العسيم</h3>
+         </div>
+         <div class="club-name">
+            <p > <h4>محاضر</h4>
+                <b> تحويلة الهاتف : </b>ـــ<br>
+                <b>الايميل:</b>n.alaseem@psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/n.alaseem"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>  
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="F-user.png" width="50%">
+         <h3 style="text-align: center;">رحاب محمد مرزوق النفيعي</h3>
+         </div>
+         <div class="club-name">
+            <p > <h4>معيد</h4>
+                <b> تحويلة الهاتف : </b>8858<br>
+                <b>الايميل:</b>r.alnefaie@psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/r.alnefaie"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>
+</div>
+<!--ROW-->
+<div class="cards">
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="F-user.png" width="50%">
+         <h3 style="text-align: center;">سارة عبدالعزيز سعد الحماد	</h3>
+         </div>
+         <div class="club-name">
+            <p> <h4>معيد  مبتعث	</h4>
+                <b> تحويلة الهاتف : </b>ـــ<br>
+                <b>الايميل: </b>sa.alhammad@psau.edu.sa	<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/sa.alhammad"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="F-user.png" width="50%">
+         <h3 style="text-align: center;">منيرة عبدالعزيز راشد</h3>
+         </div>
+         <div class="club-name">
+            <p > <h4>معيد  مبتعث	</h4>
+                <b> تحويلة الهاتف : </b>ـــ<br>
+                <b>الايميل:</b>m.alhelal@psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/m.alhelal"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="F-user.png" width="50%">
+         <h3 style="text-align: center;">أمل صالح أحمد الزهراني</h3>
+         </div>
+         <div class="club-name">
+            <p > <h4>معيد مبتعث</h4>
+                <b> تحويلة الهاتف : </b>ـــ<br>
+                <b>الايميل:</b>ama.alzahrani@psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/ama.alzahrani"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>
+</div>
+<!--ROW-->
+<div class="cards">
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="F-user.png" width="50%">
+         <h3 style="text-align: center;">أسماء محمد موسى الزهراني	</h3>
+         </div>
+         <div class="club-name">
+            <p> <h4>معيد مبتعث</h4>
+                <b> تحويلة الهاتف : </b>ـــ<br>
+                <b>الايميل: </b>Asma.alzahrani@psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/asma.alzahrani"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>
+    <div class="card">
+         <div class="card-logo">
+         <img class="user-logo-img" src="F-user.png" width="50%">
+         <h3 style="text-align: center;">ندى يحيى هياس الزهراني	</h3>
+         </div>
+         <div class="club-name">
+            <p > <h4>محاضر مبتعث</h4>
+                <b> تحويلة الهاتف : </b>ـــ<br>
+                <b>الايميل:</b>ny.alzahrani@psau.edu.sa<br>
+                <a href="https://faculty.psau.edu.sa/ar/psau/facultymember/ny.alzahrani"><b>الموقع الجامعي</b></a>
+            </p>
+         </div>
+    </div>
+    </div>
+</div>
+         <script>
+            function openPage(pageName,elmnt,color) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablink");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+              }
+              document.getElementById(pageName).style.display = "block";
+              elmnt.style.backgroundColor = color;
+            }
+            
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+            </script>          
+</body>
+</html>
