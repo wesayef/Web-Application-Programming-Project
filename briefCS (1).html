@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar" >
+<head>
+  <meta charset="UTF-8">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Tajawal&display=swap" rel="stylesheet"></link>
+<style>
+
+
+.read-more {
+  position: relative;
+}
+.read-more > .read-more__content {
+  z-index: 0;
+  overflow: hidden;
+}
+.read-more > .read-more__content > .read-more__content__container {
+  position: relative;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+  max-height: 2000px;
+}
+.read-more > .read-more__content > .read-more__content__container:before {
+  z-index: 5;
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  top: auto;
+  height: 120px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(white));
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0), #fff);
+  background: linear-gradient(rgba(255, 255, 255, 0), #fff);
+  opacity: 0;
+  -webkit-transition: opacity 0.8s;
+  -moz-transition: opacity 0.8s;
+  -ms-transition: opacity 0.8s;
+  transition: opacity 0.8s;
+}
+.read-more.collapsed .read-more__content > .read-more__content__container {
+  text-overflow: ellipsis;
+  max-height: 135px;
+}
+.read-more.collapsed .read-more__content > .read-more__content__container:before {
+  opacity: 1;
+}
+.read-more > .read-more__expand {
+  z-index: 10;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+</style>
+</head>
+<body dir="rtl">
+  <div style = "padding-left: 80px; padding-right: 80px;padding-bottom: 80px; padding-top: 40px; font-family: Tajawal ;font-size: 20px; width:100%;">
+    <h1 align="right" dir="rtl" style=" color:#5c1e0b;"><b>نبذة عن القسم </b></h1>
+    <br>
+    <hr>
+    <br>
+  <div class="read-more collapsed" >
+    <div class="read-more__content">
+      <div class="read-more__content__container" align="right" dir="rtl" >
+        <p style="color:#9FA3A6;">أنشئ قسم علوم الحاسوب في الجلسة الثامنة والثلاثين لمجلس التعليم العالي في 26 جمادي الاول 1426، كأحد أقسام كلية العلوم بالخرج التابعة لجامعة الملك سعود، وبصدور الموافقة بدأ الاعداد للقسم، وبدأت الدراسة في القسم مع بداية الفصل الدراسي الثاني للعام الجامعي 1427 – 1428 هـ .</p>
+        <p style="color:#9FA3A6;">
+          ويقدم القسم برنامجا للبكالوريوس في علوم الحاسب، يحصل الطلاب عند استكمال متطلبات هذا البرنامج على درجة البكالوريوس في علوم الحاسب والذي يعمل على إعداد كوادر ذوي كفاءات عالية متخصصة في مجال علوم الحاسب.
+        </p>
+        <p style="color:#9FA3A6;" >
+          التزم قسم علوم الحاسب منذ انشائه على توطيد المعرفة العلمية والخبرات العملية في مجال علوم الحاسب من خلال التحديث الشامل لكافة محتويات المقررات لتعكس الصورة الحالية لمجال علوم الحاسب وتمكن الطلبة من مواكبة أحدث التطورات في هذا المجال الواسع والمتجدد.
+        </p>
+        <p style="color:#9FA3A6;" >
+          لذلك تم تصميم هذا المنهج ضمن الية ومنهجية تعطي للقسم حرية واسعة لتكييف المناهج وفق رغبة الطلاب الراغبين بأن يصبحوا متخصصين في المجالات المختلفة لعلوم الحاسب وكذلك للطلاب المتطلعين إلى مواصلة دراسات عليا في التخصص وكذلك الذين يرغبون في التعاون مع فروع معرفية أخرى مرتبطة بهذا التخصص.
+        </p>
+        <p style="color:#9FA3A6;" >
+          وتحقيقا لهذا التوجة ركز برنامج علوم الحاسب على النتائج الأساسية التي يجب الألتزام بها من خلال توفير إطاراً مرناً متعدد المسارات نحو البرنامج والذي سوف يهدف الى توفير فرصة للتعمق في أحد فروع المعرفة ذات الصلة وتلبي حاجة سوق العمل لخريجين لديهم المهارة الكافية في تلك المهن والمسارات. ويشمل هذا الجزء رؤية، رسالة، أهداف، وغايات القسم، بالإضافة إلى متطلبات البرنامج والخطة الإرشادية الموصى بها.
+        </p>
+      </div>
+    </div>
+    <div class="read-more__expand">
+      <button class="btn btn-primary" style="background-color: #bf7c00; color: white; border-color: #bf7c00; font-size: 20; size: 20px;">قراءة المزيد </button>
+    </div>
+   </div>
+  </div>
+</body>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script>
+  // Read More
+$('.read-more > .read-more__expand .btn').on('click', function() {
+$(this).parents('.read-more').toggleClass('collapsed');
+$(this).text($(this).text() == 'قراءة المزيد' ? 'قراءة المزيد' : 'قراءة الأقل');
+
+});
+</script>
+</html>
